@@ -1,4 +1,4 @@
-package com.steve.demo;
+package com.steve.authority;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
