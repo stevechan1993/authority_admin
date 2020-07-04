@@ -17,6 +17,8 @@
        location属性指明加载jar/zip包的全路径
    <classPathEntry location="/Program Files/IBM/SQLLIB/java/db2java.zip" />
      -->
+    <classPathEntry location="/Users/stevechan/.m2/repository/mysql/mysql-connector-java/8.0.20/mysql-connector-java-8.0.20.jar" />
+
 
     <!--
         context:生成一组对象的环境
@@ -30,7 +32,7 @@
             2，MyBatis3Simple：类似MyBatis3，只是不生成XXXBySample；
         introspectedColumnImpl：类全限定名，用于扩展MBG
     -->
-    <context id="mysql" defaultModelType="hierarchical" targetRuntime="MyBatis3Simple" >
+    <context id="mysql" defaultModelType="hierarchical" targetRuntime="MyBatis3" >
 
         <!-- 自动识别数据库关键字，默认false，如果设置为true，根据SqlReservedWords中定义的关键字列表；
             一般保留默认值，遇到数据库关键字（Java关键字），使用columnOverride覆盖
@@ -50,7 +52,7 @@
         <!-- 必须要有的，使用这个配置链接数据库
             @TODO:是否可以扩展
          -->
-        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql:///authority" userId="root" password="pl,okm123">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1:3306/authority?useUnicode=true;characterEncoding=UTF-8" userId="root" password="pl,okm123">
             <!-- 这里面可以设置property属性，每一个property属性都设置到配置的Driver上 -->
         </jdbcConnection>
 
