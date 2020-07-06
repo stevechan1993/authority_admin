@@ -41,6 +41,11 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+		</dependency>
+
 		<!-- swagger -->
 		<dependency>
 			<groupId>io.springfox</groupId>
@@ -66,11 +71,19 @@
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
+
 <!--		druid-->
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>druid-spring-boot-starter</artifactId>
 			<version>1.1.10</version>
+		</dependency>
+
+<!--		log4j-->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
 		</dependency>
 	</dependencies>
 
@@ -90,8 +103,6 @@
 					<configurationFile>src/main/resources/mybatis-generator-config.xml</configurationFile>
 					<!--允许覆盖生成的文件-->
 					<overwrite>true</overwrite>
-					<!--将当前pom的依赖项添加到生成器的类路径中-->
-					<includeCompileDependencies>true</includeCompileDependencies>
 				</configuration>
 <!--				<dependencies>-->
 					<!--mybatis-generator插件的依赖包-->
