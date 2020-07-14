@@ -3,6 +3,7 @@ package com.steve.authority.config;
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -11,9 +12,9 @@ import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import javax.activation.DataSource;
 import javax.servlet.Filter;
 import javax.servlet.Servlet;
+import javax.sql.DataSource;
 import java.sql.SQLException;
 
 @Configuration
@@ -50,7 +51,7 @@ public class DruidConfig {
             e.printStackTrace();
         }
 
-        return (DataSource) druidDataSource;
+        return druidDataSource;
     }
 
     /**
