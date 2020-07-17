@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.steve</groupId>
-	<artifactId>authority</artifactId>
+	<artifactId>authority-admin</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>authority</name>
+	<name>authority-admin</name>
 	<description>Authority project for Spring Boot</description>
 
 	<properties>
