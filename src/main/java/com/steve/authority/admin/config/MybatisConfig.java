@@ -25,6 +25,7 @@ public class MybatisConfig {
 
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
         sessionFactory.setMapperLocations(resolver.getResources("classpath*:**/sqlmap/*.xml")); // 扫描映射文件
+
         return sessionFactory.getObject();
     }
 }
