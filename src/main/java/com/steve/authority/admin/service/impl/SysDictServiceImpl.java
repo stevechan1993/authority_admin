@@ -26,7 +26,7 @@ public class SysDictServiceImpl implements SysDictService {
 
     @Override
     public int delete(SysDict record) {
-        return sysDictMapper.deleteByPrimaryKey(record.getId());
+        return sysDictMapper.deleteByPrimaryKey(record);
     }
 
     @Override

@@ -18,7 +18,7 @@ public class SysDictKey {
      *
      * @mbg.generated Sun Jul 05 10:44:23 CST 2020
      */
-    public SysDictKey getId() {
+    public Long getId() {
         return id;
     }
 
